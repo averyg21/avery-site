@@ -1,0 +1,54 @@
+body{
+    background-color: aqua;
+}
+
+.container{
+    background-color: red;
+}
+
+.navBar{
+    background-color:white;
+}
+
+.college{
+    background-color: white;
+}
+
+.right{
+    float: right;
+}
+
+.head1{
+    font-size: 30px;
+}
+
+.experience{
+    background-color: greenyellow
+}
+
+.skills{
+    background-color: white;
+    text-align: center;
+}
+
+.projects{
+    background-color:greenyellow;
+}
+
+.interest{
+    background-color:greenyellow;
+}
+
+.head2{
+    font-size: 24px;
+}
+
+footer{
+    text-align: center;
+}
+/*
+take away bulltes from all the list
+*/
+ul,li{
+    list-style-type: none;
+}
