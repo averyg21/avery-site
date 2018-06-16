@@ -42,6 +42,10 @@ body{
 .head2{
     font-size: 24px;
 }
+
+footer{
+    text-align: center;
+}
 /*
 take away bulltes from all the list
 */
