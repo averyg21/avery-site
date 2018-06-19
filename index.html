@@ -4,172 +4,248 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Welcome!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Avery's Website</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Scripts to toggle sliding states-->
+    <script>
+        $(document).ready(function(){
+            $("#title1").click(function(){
+                $("#python").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#title2").click(function(){
+                $("#website").slideToggle("slow");
+            });
+        });
+        
+        $(document).ready(function(){
+            $("#title3").click(function(){
+                $("#android").slideToggle("slow");
+            });
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
+    <!--Container for the page-->
+    <section class="container-fluid">
+        <!--row for header-->
+        <section class="row">
+            <!--Header columns of the page-->
+            <!--Set to 12 on all screens-->
+            <section class="col-sm-12">
+                <nav role="navigation">
+                    <ul class="nav nav-tabs nav-justified" id="changeNav">
+                        <li role="presentation"><a href="#">Home</a></li>
+                        <li role="presentation"><a href="#college">Education</a></li>
+                        <li role="presentation"><a href="#experience">Experience</a></li>
+                        <li role="presentation"><a href="#skills">Skills</a></li>
+                        <li role="presentation"><a href="#projects">Projects</a></li>
+                        <li role="presentation"><a href="#about">About Me</a></li>
+                        <li role="presentation"><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </section>
 
-        <div class="navBar">
-            <ul>
-                <li>Home</li>
-                <li>Background</li>
-                <li>College</li>
-                <li>Experience</li>
-                <li>Projects</li>
-                <li>Interest</li>
-            </ul>
+        </section>
 
-        </div>
+        <!--College section of the page-->
+        <section class="row">
+            <section class="col-xs-12" id="college">
+                    <h1><b>Education</b></h1>
 
-        <div class="college">
-            <p class="head1"><b>Education</b></p>
-            <p>
-                <b>Bachelor of Science in Computer Science</b>
-                <span class="right"><b>Decemember 2017</b></span>
-                <br/>
+                <p>
+                    <b>Bachelor of Science in Computer Science</b>
+                    <span class="right"><b>Decemember 2017</b></span>
+                    <br/>
+    
+                    <b>University of Houston-Clear Lake, Houston, TX</b>
+                    <span class="right"><b>GPA: 3.3/4.0</b></span>
+    
+                    <h3>Related Coursework:</h3>
+                    <ul>
+                        <li class="und"><b>Web Development</b></li>
+                        <ul>
+                            <li>Web Application Development</li>
+                        </ul>
+                        </br>
+                        
+                        <li class="und"><b>Programming</b></li>
+                        <ul>
+                            <li>Programming Fundamentals I (C#)</li>
+                            <li>Programming Fundamentals II (Visual Basic)</li>
+                            <li>Computer Science II (Java)</li>
+                            <li>Data Structures</li>
+                            <li>Advanced Data Structures</li>
+                            <li>Software Engineering</li>
+                            <li>Numerical Methods</li>
+                            <li>Computer Org & Assembly Language</li>
+                            <li>Advanced Software Development with .NET & C#</li>
+                        </ul>
+                        </br>
+    
+                        <li class="und"><b>Operating Systems</b></li>
+                        <ul>
+                            <li>Computer Systems Administration (Linux)</li>
+                            <li>Operating Systems (C)</li>
+                        </ul>
+                    </br>
+    
+                        <li class="und"><b>Database</b></li>
+                        <ul>
+                            <li>Design of Database Systems</li>
+                        </ul>
+                        </br>
+    
+                        <li class="und"><b>Project Management</b></li>
+                        <ul>
+                            <li>Modern Systems Analysis & Design</li>
+                        </ul>
+                    </ul>
+                </p>
+            </section>
 
-                <b>University of Houston-Clear Lake, Houston, TX</b>
-                <span class="right"><b>GPA: 3.3/4.0</b></span>
+        </section>
+        
+        <section class="row">
+            <section class="col-xs-12" id="experience">
+                <h1><b>Experience</b></h1>
 
-                <h3>Related Coursework</h3>
+                <p><b>Bridges to Stem Careers (BSC) Mentor</b><span class="right"><b>Fall 2017</b></span></br>
+                    University of Houston-Clear Lake
+                </p>
+    
                 <ul>
-                    <li><b>Web Development:</b></li>
-                    <ul>
-                        <li>Web Application Development</li>
-                    </ul>
-                    
-                    <li><b>Programming:</b></li>
-                    <ul>
-                        <li>Programming Fundamentals I (C#)</li>
-                        <li>Programming Fundamentals II (Visual Basic)</li>
-                        <li>Computer Science II (Java)</li>
-                        <li>Data Structures</li>
-                        <li>Advanced Data Structures</li>
-                        <li>Software Engineering</li>
-                        <li>Numerical Methods</li>
-                        <li>Computer Org & Assembly Language</li>
-                        <li>Advanced Software Development with .NET & C#</li>
-                    </ul>
-
-                    <li><b>Operating Systems:</b></li>
-                    <ul>
-                        <li>Computer Systems Administration (Linux)</li>
-                        <li>Operating Systems (C)</li>
-                    </ul>
-
-                    <li><b>Database:</b></li>
-                    <ul>
-                        <li>Design of Database Systems</li>
-                    </ul>
-
-                    <li><b>Project Management:</b></li>
-                    <ul>
-                        <li>Modern Systems Analysis & Design</li>
-                    </ul>
+                    <li>Tutor and mentor students during office hours</li>
+                    <li>Help students with code debugging</li>
+                    <li>Assist Computer Science professors and reinforce lessons taught to students</li>
+                    <li>Research and present a lecture for Tech Friday</li>
+                    <li>Provide guidance/advice to students for obtaining degree requirements</li>
                 </ul>
-            </p>
-        </div>
+            </br>
+    
+                <p><b>Sales Associate</b><span class="right"><b>Spring 2017</b></span><br>
+                Teaching Cottage
+                </p>
+    
+                <ul>
+                    <li>Provided customer service to patrons by helping with educational selections </li>
+                    <li>Replenished merchandise and organized workstation during peak times  </li>
+                    <li>Accomplished multitasking in different roles throughout store  </li>
+                </ul>
+            </br>
 
-        <div class="experience">
-            <p class="head1"><b>Experience</b></p>
+            </section>
+        </section>
 
-            <p><b>Bridges to Stem Careers (BSC) Mentor</b><span class="right"><b>Fall 2017</b></span></br>
-                University of Houston-Clear Lake
-            </p>
+        <section class="row">
+            <section class="col-xs-12" id="skills">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Programmed in Java, C, C#, Python, and Visual Basic</li>
+                    <li>Coded in HTML and CSS</li>
+                    <li>Efficient with Windows OS</li>
+                    <li>Productive in Linux OS (Fedora Distro)</li>
+                    <li>Experience with version control using Git and GitHub</li>
+                    <li>Constructed a home file server through Linux (Fedora Distro) and Samba</li>
+                    <li>Knowledge of jQuery functions</li>
+                    <li>Built databases using MySQL</li>
+                    <li>Effective with Microsoft Office</li>
+                </ul>
+            </section>
+        </section>
 
-            <ul>
-                <li>Tutor and mentor students during office hours</li>
-                <li>Help students with code debugging</li>
-                <li>Assist Computer Science professors and reinforce lessons taught to students</li>
-                <li>Research and present a lecture for Tech Friday</li>
-                <li>Provide guidance/advice to students for obtaining degree requirements</li>
-            </ul>
+        <section class="row" id="wholeProject">
+            <section class="col-xs-12" id="projects">
+                <h1>Projects</h1>
+                <h2><a href="https://github.com/averyg21?tab=repositories">For all of my projects click here!</a></h2>
+            </section>
 
-            <p><b>Sales Associate</b><span class="right"><b>Spring 2017</b></span><br>
-            Teaching Cottage
-            </p>
+            <section class="col-xs-12 title" id="title1">
+                <h2>Click for Python Hangman App</h2>
+            </section>
 
-            <ul>
-                <li>Provided customer service to patrons by helping with educational selections </li>
-                <li>Replenished merchandise and organized workstation during peak times  </li>
-                <li>Accomplished multitasking in different roles throughout store  </li>
-            </ul>
-        </div>
+            <section class="col-xs-12 slide" id="python">
+                <img src="img/gui1.jpg" alt="HangmanGUI">
+                <h3>Python Hangman</h3>
+                <ul>
+                    <li>Converted command line interface to graphical user interface with Tkinter</li>
+                    <li>Employs turtle graphics</li>
+                    <li>Compatible with Windows and Linux</li>
+                    <li>Git & GitHub used for version control</li>
+                    <li>Source Code: <a href="https://github.com/averyg21/hangman">Hangman Repository</a> </li>
+                </ul>
+            </section>
 
-        <div class="skills">
-            <p class="head1"><b>Skills</b></p>
-            <ul>
-                <li>Programmed in Java, C, C#, Python, and Visual Basic</li>
-                <li>Coded in HTML and CSS</li>
-                <li>Efficient with Windows OS</li>
-                <li>Productive in Linux OS (Fedora Distro)</li>
-                <li>Experience with version control using Git and GitHub</li>
-                <li>Constructed a home file server through Linux (Fedora Distro) and Samba</li>
-                <li>Knowledge of jQuery functions</li>
-                <li>Built databases using MySQL</li>
-                <li>Effective with Microsoft Office</li>
-            </ul>
+            <section class="col-xs-12 title" id="title2">
+                    <h2>Click for PWK Website</h2>
+            </section>
 
-        </div>
+            <section class="col-xs-12 slide" id="website">
+                    <img src="img/pwkweb.jpg" alt="PWKWebsite">
+                    <h3>PWK Website</h3>
+                    <ul>
+                        <li>Created using HTML, CSS, & Bootstrap</li>
+                        <li>Rendered uniquely for individual screen sizes.</li>
+                        <li>Hosted by GitHub Pages</li>
+                        <li>Website: <a href="https://averyg21.github.io/PWKWebsite/">PWK Website</a></li>
+                        <li>Source Code: <a href="https://github.com/averyg21/PWKWebsite">PWK Website Repository</a></li>
+                    </ul>
+            </section>
 
-        <div class="projects">
-            <p class="head1"><b>Projects</b></p>
-            
-            <p class="head2"><b>Hangman Python App</b></p>
-            <ul>
-                <li>Converted command line interface to graphical user interface with Tkinter</li>
-                <li>Employs turtle graphics</li>
-                <li>Compatible with Windows and Linux</li>
-                <li>Git & GitHub used for version control</li>
-                <li>Source Code: <a href="https://github.com/averyg21/hangman">Hangman Repository</a> </li>
-            </ul>
+            <section class="col-xs-12 title" id="title3">
+                <h2>Click for Android Bluetooth App</h2>
+            </section>
 
-            <p class="head2"><b>Phase 1: Command Line</b></p>
-            <img src="img/cmd2.JPG" alt="commandLine" width="50%">
-
-            <p class="head2"><b>Phase 2: GUI</b></p>
-            <img src="img/gui1.JPG" alt="GUI" width="50%">
-            <hr>
-
-            <p class="head2"><b>Android Bluetooth Tracking App (Senior Project)</b></p>
-            <ul>
+            <section class="col-xs-12 slide" id="android">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0MxhWs9BtN4"></iframe>
+                </div>
+                <h3>Android Bluetooth Tracking App</h3>
+                <ul>
                     <li>Application pushes a notification to your Android phone when a connected Bluetooth device is out of range</li>
                     <li>Prototyped and constructed the UI/UX with team members</li>
                     <li>Coded using Java and Android Studio IDE</li>
                     <li>Performed documentation throughout the project lifecycle</li>
                     <li>Oversaw version control</li>
                     <li>Source Code: <a href="https://github.com/averyg21/Phone_Wallet_Keys">Phone Wallet Keys Repository</a> </li>
-            </ul>
+                </ul>
+            </section>
+        </section>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0MxhWs9BtN4"></iframe>
-            <hr>
+        <section class="row">
+            <section class="col-xs-12" id="about">
+                <h1>About Me</h1>
+                <p>Hello I'm Avery Grimes! I'm a recent computer science graduate from the
+                    University of Houston - Clear Lake </br> who likes to learn and tinker with new
+                    technology. I'm currently seeking a full time position relating to software </br>
+                    development. In my free time I like to watch sports and play video games. Explore my page and contact 
+                    me </br>if you have any questions or like what you see!
+                </p>
 
-            <p class="head2"><b>Phone Wallet Keys Website</b></p>
-            <ul>
-                <li>Converted command line interface to graphical user interface with Tkinter</li>
-                <li>Employs turtle graphics</li>
-                <li>Compatible with Windows and Linux</li>
-                <li>Git & GitHub used for version control</li>
-                <li>Website: <a href="https://averyg21.github.io/PWKWebsite/">PWK Website</a></li>
-                <li>Source Code: <a href="https://github.com/averyg21/PWKWebsite">PWK Website Repository</a> </li>
-            </ul>
-            <img src="img/pwkweb.jpg" alt="PWK Website" width="50%">
+            </section>
+        </section>
 
-            <p>For current webpage & my other project's source code: <a href="https://github.com/averyg21">Click Here!</a></p>
- 
-        </div>
+        <section class="row">
+            <section class="col-xs-12" id="contact">
+                <h1>Contact Me</h1>
+                <a href="mailto:averygrimes@hotmail.com" id="mail" target="_self">averygrimes@hotmail.com</a></br></br>
+                <a href="https://www.linkedin.com/in/averygrimes/ "><img src="img/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/averyg21"><img src="img/github.png" alt="GitHub"></a>
+            </section>
+        </section>
 
-        <div class="interest">
-            <p class="head1"><b>Interest</b></p>
-        </div>
 
-    </div>
-    <footer><b>Contact Me:</b> </br>
-        <a href="mailto:averygrimes@hotmail.com" target="_self">averygrimes@hotmail.com</a></br></br>
-        <a href="https://www.linkedin.com/in/averygrimes/ "><img src="img/linkedin.png" alt="LinkedIn" width="3%"></a>
-        <a href="https://github.com/averyg21"><img src="img/github.png" alt="GitHub" width="3%"></a>
-    </footer>
+    </section>
     
 </body>
 </html>
