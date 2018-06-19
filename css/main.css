@@ -16,7 +16,7 @@
 /*-----College section of the page----*/
 #college{
     background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,
-    rgba(0,0,0,0.6) 100%), url('/img/uhcl.jpg');
+    rgba(0,0,0,0.6) 100%), url('../img/uhcl.jpg');
 }
 
 #college h1{
@@ -57,7 +57,7 @@
 /*------Experience section of the page----*/
 #experience{
     background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,
-    rgba(0,0,0,0.6) 100%), url('/img/avery1.jpg') -100px -400px;
+    rgba(0,0,0,0.6) 100%), url('../img/avery1.jpg') -100px -400px;
     color: white;
 }
 
